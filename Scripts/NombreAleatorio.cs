@@ -1,0 +1,93 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NombreAleatorio : MonoBehaviour
+{
+    public TextMesh meshNombreIA;
+
+    string[] nombres = { 
+    "Carlos",
+    "Lilo",
+    "Gizmo",
+    "Juancar",
+    "Mecachis",
+    "Qarol",
+    "Ana8a",
+    "Guido",
+    "Andy",
+    "Cheyla",
+    "Durum",
+    "Hiro",
+    "Anabelilla",
+    "Rosalia",
+    "Gunter",
+    "BMO",
+    "Gasco",
+    "Peter",
+    "Togo",
+    "Rubik",
+    "Pinga",
+    "Marco",
+    "Motomami",
+    "Kihkáh",
+    "xX_UltraSniper360_FaZe_Xx",
+    "Pizzapoya",
+    "Pedro",
+    "Juanpa",
+    "Merida33",
+    "Sayarhi",
+    "Deewa",
+    "Dorada(pez)",
+    "Alicio",
+    "Galiciano69",
+    "Polones",
+    "Polono",
+    "Arepa",
+    "NuestroChele",
+    "MasRuedasQuePuertas",
+    "Tuchele",
+    "MasPuertasQueRuedas",
+    "Homo123",
+    "Joaquinkiller_YT",
+    "KaniFrame_YT",
+    "GiovannyGiorgio",
+    "Lesboloka456",
+    "Boyeetovasilao",
+    "AnderWorld11",
+    "NoelJustOne",
+    "Noepeke",
+    "Moru",
+    "Salvador \"Deewa\"",
+    "TutorialDePelo",
+    "Prospro",
+    "RigueameEsta",
+    "MatFranco",
+    "Hamtaro",
+    "Hampter",
+    "Daniela(perro)",
+    "YeenaLimon",
+    "Windows95",
+    "Makako",
+    "sopA",
+    "ManguitoClasico",
+    "Chamfer",
+    "Chaser",
+    "Ethan",
+    "WelitonKIU",
+    "Bounds",
+    "ASodioEightA",
+    "VoidStart",
+    "Error404",
+    "Tetas",
+    "Culo",
+    "Ano8a",
+    "Agueda",
+    "CodigoEnLaTiendaFornyte"
+    };
+    void Awake()
+    {
+        string nombreIA = nombres[Random.Range(0, nombres.Length)];
+        meshNombreIA.text = nombreIA;
+    }
+}
